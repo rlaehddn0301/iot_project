@@ -5,32 +5,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7c9030ac2f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
     <title>Iot Project</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+        
+        .header {
+            display: flex;
+            position: fixed;
+            justify-content: center;
+            background-color: #00102A;
+            padding: 5px;
+            width: 100%;
+            opacity: 0.85;
+        }
+        
+        i {
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu {
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            margin-right: 20px;
+        }
+        
+        .header-menu {
+            margin: 15px;
+            list-style: none;
+            color: white;
+            font-size: 15px;
+        }
+        
+        .iot-video {
+            display: flex;
+            justify-content: center;
+            position: relative; /* Added */
+        }
+        
+        .iot {
+            height: 100%;
+            text-align: left;
+            font-size: 20px;
+            margin-left: 30px;
+            background-color: #F5F5F7;
+            padding: 20px;
+            border-radius: 40px;
+        }
+        
+        video {
+            border-radius: 40px;
+            width: 50%; 
+            height: 50%;
+        }
+        
+        .calendar {
+            display: flex; /* Added */
+            justify-content: center; /* Added */
+            align-items: center; /* Added */
+            position: absolute; /* Removed */
+            top: -150px; /* Adjust top value as needed */
+            left: 100px; /* Adjust left value as needed */
+        }
+        
+        .shop {
+            display: flex;
+        }
+
+        .container-1 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container {
+            display: block;
+            text-align: center;
+            margin-top: 280px;
+        }
+
+        .container-2 {
+            display: block;
+            justify-content: center;
+        }
+
+        .plan {
+            margin-top: 60px;
+        }
+        
+        h3 {
+            margin-bottom: 1px;
+        }
+        
+        .span {
+            font-size: 12px;
+        }
+
+        .span-1 {
+            font-size: 30px;
+            margin-left: 30px;
+            font-weight: 700;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: left;
+            color: #F5F5F7;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+        }
+
+        .footer-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+            margin: 15px;
+            font-size: 10px;
+        }
+
+        .p {
+            margin-top: 50px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #F5F5F7;
+        }
+
+        .fa-brands {
+            margin-right: 30px;
+            color: #FF1D62;
+        }
+        
+        .fa-solid {
+            color: #FF1D62;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo-icon">
-            <i class="fa-brands fa-google fa-2x"></i>
-        </div>
         <ul class="menu">
-            <li>프로젝트</li>
-            <li>기획의도</li>
-            <li>기획과정</li>
-            <li>참여자</li>
-            <li>느낀점</li>
+            <li class="header-menu">
+                <i class="fa-brands fa-google fa-2x"></i>
+            </li>
+            <li class="header-menu"><a href="">프로젝트</a></li>
+            <li class="header-menu"><a href="">기획과정</a></li>
+            <li class="header-menu"><a href="">느낀점</a></li>
+            <li class="header-menu"><a href="">참여자</a></li>
+            <li class="header-menu"><a href=""></a></li>
         </ul>
     </header>
-    <div class="iot-video">
-        <video src="점심 굶고 일하더니 '연차 인정해달라'…_마일리지인 줄_ _ SBS _ 뉴스딱.mp4" 
-            type="video/mp4">
-        </video>
+    <div class="container-1">
+        <div class="container">
+            <div class="iot-video">
+                <video src="점심 굶고 일하더니 '연차 인정해달라'…_마일리지인 줄_ _ SBS _ 뉴스딱.mp4" type="video/mp4"></video>
+                <div class="calendar">
+                    <i class="fa-solid fa-calendar fa-6x"></i>
+                    <span class="span-1">2023 1학년 1학기 기말 과제</span>
+                </div>
+                <div class="iot">
+                    <h3>미래를 만나는 문, 자동문 시스템</h3>
+                    <span class="span">#편리함을초월하는자동문 #IoT시대의필수템,자동문</span>
+                    <div class="p">
+                        <p>자동문 시스템은 편리함과 안전성을 결합하여 미래의 문 개발을 목표</p>
+                        <p>IoT 기술을 활용하여 사용자를 감지하여 문을 자동으로 개폐</p>
+                        <p>자동문 시스템은 편리함과 안전성을 결합하여 미래의 문 개발을 목표</p>
+                        <p>휴대폰 앱이나 기타 인터페이스를 통해 자동문을 제어하고 상태를 모니터링</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="iot">
-        <h1>이런저런 주제로 무언가의 작품</h1>
-        <p>이렇게 저렇게 해서 요렇게 하고 그 다음엔 나도 모르게 이렇게 한다음 이래 하면 될듯</p>
-        <p>이렇게 저렇게 해서 요렇게 하고 그 다음엔 나도 모르게 이렇게 한다음 이래 하면 될듯</p>
-        <p>이렇게 저렇게 해서 요렇게 하고 그 다음엔 나도 모르게 이렇게 한다음 이래 하면 될듯</p>
-    </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer-1">
+                <li>이름 : 김동우</li>
+                <li>주소 : 부산광역시 해운대구 좌동로 63번길</li>
+                <li>전화번호 : 010 9128 6850</li>
+                <li>인스타그램 아이디 : @dongw00</li>
+            </ul>
+            <ul class="footer-1">
+                <li>학교 : 동의과학대학교</li>
+                <li>학년 : 1학년</li>
+                <li>전공 : 컴퓨터소프트웨어과</li>
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-instagram fa-3x"></i>
+                <i class="fa-brands fa-youtube fa-3x"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
