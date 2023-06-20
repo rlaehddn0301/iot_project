@@ -1,19 +1,16 @@
 body {
     margin: 0 auto;
-    height: 140vh;
 }
 
 .header {
     display: flex;
     position: fixed;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: #6D2CFF;
     padding: 5px;
     width: 100%;
-    opacity: 0.85;
-    
+    box-shadow: 0 0 10px rgb(139, 139, 139);
 }
-
 
 i {
     color: white;
@@ -23,6 +20,7 @@ i {
 
 .menu {
     display: flex;
+    align-items: center;
     margin: 0px;
     margin-right: 20px;
 }
@@ -31,44 +29,127 @@ i {
     margin: 15px;
     list-style: none;
     color: white;
+    font-size: 13px;
 }
 
 .iot-video {
     display: flex;
-    flex-direction: column; /* 요소들을 세로로 배치 */
-    align-items: flex-start; /* 글을 왼쪽 정렬 */
-    margin-top: 200px;
+    justify-content: center;
+    position: relative;
 }
 
 .iot {
+    height: 100%;
     text-align: left;
-    margin-top: 200px;
     font-size: 20px;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 video {
     border-radius: 40px;
-    max-width: 100%; /* 비디오 너비 조정 */
-    height: auto;
+    width: 50%; 
+    height: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.container {
+.calendar {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    position: absolute;
+    top: -150px;
+}
+
+.shop {
+    display: flex;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: block;
     text-align: center;
+    margin-top: 200px;
+}
+
+.plan {
+    margin-top: 60px;
 }
 
 h3 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-span {
-    margin-top: 20px;
-    font-size: 20px;
+.span {
+    font-size: 12px;
+    color: #1D1D1F;
+}
+
+.span-1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 80px;
 }
 
 footer {
-    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    color: #F5F5F7;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.footer-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.point {
+    font-size: 15px;
+    font-weight:bold;
+}
+
+li {
+    list-style: none;
+    margin: 15px;
+    font-size: 12px;
+}
+
+.p {
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F7;
+}
+
+.header-menu:hover {
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: #1D1D1F;
 }
